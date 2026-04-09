@@ -1,0 +1,64 @@
+
+<html>
+<head>
+    <title>Color Change</title>
+
+<style>
+    .style {
+        border: 0.3cm solid black;  /* frame */
+        padding: 20px;
+        width: 10cm;
+        margin: auto;
+        background-color: yellow;
+        text-align: center;
+
+    }
+    .suriya{
+        width: 1.6cm;
+        height: 1.6cm;
+    }
+    button{
+        height: 0.8cm;
+        background-color: lightblue;
+        color: navy;
+    }
+
+</style>
+<script>
+     function color1(){
+            let value = document.getElementById("color1").value;
+            document.body.style.background = value;
+        }
+        function color2(){
+            let value = document.getElementById("color2").value;
+            document.body.style.background = value;
+        }
+       function color3() {
+            let value = document.getElementById("color3").value;
+            document.body.style.background = value;
+        }
+       
+</script>
+
+</head>
+<body style="text-align: center;">
+    
+    <br>
+    <h1> change Background Color</h1>
+    <br>
+     <div class="style">
+       <input type="text" id="color1" placeholder="Enter a color name" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <button  onclick="color1()">change color</button>
+    </div>  <br><br>
+    <div class="style">
+       Select Colour :&nbsp;&nbsp;<input type="color" class="suriya" id="color2"   > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <button  onclick="color2()">change color</button>
+    </div>  <br><br>
+      <div class="style">
+        Select Colour :&nbsp;&nbsp;
+        <input type="color" class="suriya" id="color3" oninput="color3()">
+    </div>  
+    
+    
+</body>
+</html>

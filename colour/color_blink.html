@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Rainbow Color</title>
+</head>
+
+<style>
+    .style {
+        border: 0.3cm solid black;
+        padding: 20px;
+        width: 350px;
+        margin: auto;
+        background-color: yellow;
+    }
+</style>
+
+<body style="text-align: center;">
+    <br><br>
+    <h1>Rainbow Background</h1>
+    <br>
+
+    <div class="style">
+       <button onclick="rainbow()">Start Rainbow</button>
+    </div>   
+
+    <script>
+        function rainbow(){
+            let colors = ["red","orange","yellow","green","blue","indigo","violet"];
+            let i = 0;
+
+            setInterval(function(){
+                document.body.style.background = colors[i];
+                i++;
+
+                if(i >= colors.length){
+                    i = 0;
+                }
+            }, 850); // speed (500ms)
+        }
+    </script>
+
+</body>
+</html>

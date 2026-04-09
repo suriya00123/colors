@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Changer Background Color </title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .style {
+            border: 0.3cm solid black;
+            padding: 20px;
+            width: 10cm;
+            margin: auto;
+            background-color: yellow;
+            text-align: center;
+        }
+
+        input {
+            width: 1.6cm;
+            height: 1.2cm;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Background Change Color</h1>
+
+    <div class="style">
+        Select Colour :
+        <input type="color" id="color" oninput="changeColor()">
+    </div>
+
+    <script>
+        function changeColor() {
+            let value = document.getElementById("color").value;
+            document.body.style.background = value;
+        }
+    </script>
+
+</body>
+</html>

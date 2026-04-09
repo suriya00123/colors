@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>color</title>
+</head>
+
+<style>
+    .style {
+        border: 0.3cm solid black;
+        padding: 20px;
+        width: 350px;
+        margin: auto;
+        background-color: yellow;
+    }
+</style>
+
+<body style="text-align: center;">
+    <br><br>
+    <h1>Background change color</h1>
+    <br>
+
+    <div class="style">
+       <input type="text" id="color" placeholder="Enter color"> 
+       <button onclick="suriya()">change color</button>
+    </div>   
+
+    <script>
+        function suriya(){
+            let value = document.getElementById("color").value.toLowerCase();
+
+            if(value === "rainbow"){
+                document.body.style.background = 
+                "linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)";
+            } 
+            else {
+                document.body.style.background = value;
+            }
+        }
+    </script>
+
+</body>
+</html>
